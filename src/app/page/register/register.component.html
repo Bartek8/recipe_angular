@@ -1,0 +1,27 @@
+<div class="container p-5 w-50">
+  <form (ngSubmit)="handleSubmit(f)" #f="ngForm">
+    <h1 class="text-uppercase text-center p-5">sign up!</h1>
+    <small *ngIf="error !== ''" class="text-danger">{{error}}</small>
+    <div class="form-group">
+      <label for="Name">Name*</label>
+      <input ngModel name="name" type="text" class="form-control p-4" id="Name" placeholder="Enter your name" />
+    </div>
+
+    <div class="form-group">
+      <label for="Email">Email address*</label>
+      <input ngModel name="email" type="text" class="form-control p-4" id="Email" placeholder="Email address" />
+    </div>
+    <div class="form-group">
+      <label for="Password">Password*</label>
+      <input ngModel name="pass" type="password" class="form-control p-4" id="Password" placeholder="Password" />
+    </div>
+    <div class="form-group form-check">
+      <input ngModel name="terms" type="checkbox" class="form-check-input" id="exampleCheck1" />
+      <label class="form-check-label" for="terms">I have read and accept</label>
+      <a href="/register/terms" target="_blank">Terms of service.*</a>
+      <small class="text-danger"></small>
+    </div>
+    <small>* This fields are required</small>
+    <button type="submit" class="btn btn-warning w-100 mt-3 p-3">Register!</button>
+  </form>
+</div>

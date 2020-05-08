@@ -1,0 +1,21 @@
+.btn-register {
+  color: #f8f9fa;
+}
+
+.btn-login {
+  color: #ffc107;
+}
+
+.title {
+  color: black;
+  font-size: 1.5em;
+}
+
+.title:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown {
+  cursor: pointer;
+}

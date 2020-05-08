@@ -1,0 +1,21 @@
+<div class="container p-5 w-50">
+  <form (ngSubmit)="handleSubmit(f)" #f="ngForm">
+    <h1 class="text-uppercase text-center p-5">welcome back!</h1>
+    <div class="form-group">
+      <input ngModel name="email" type="email" class="form-control p-4" id="Email" aria-describedby="emailHelp"
+        placeholder="Email address" />
+    </div>
+    <div class="form-group">
+      <input ngModel name="pass" type="password" class="form-control p-4" id="Password" placeholder="Password" />
+    </div>
+    <small class="text-danger" *ngIf="error !== ''">{{error}}</small>
+    <button type="submit" class="btn btn-warning w-100 mt-3 p-3">Login</button>
+    <div class="row mt-3" style="cursor: pointer">
+      <a class="col" [routerLink]="['/register']">Forgot your password?</a>
+      <a [routerLink]="['/register']"   class="col text-right" >
+          Don't have an account?
+          <strong>Get Started!</strong>
+        </a>
+    </div>
+  </form>
+</div>

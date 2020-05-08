@@ -1,0 +1,25 @@
+<div class="mb-5">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5 pr-5 fixed-top">
+    <a routerLink="/" class="title">Recipe Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div *ngIf="token">
+        <a routerLink="/register" class="btn-register">
+          <button type="button" class="btn-register btn btn-warning mr-3">Create a profile</button>
+        </a>
+        <a routerLink="/login" class="btn-login">
+          <button type="button" class="btn btn-outline-warning">Log in</button>
+        </a>
+      </div>
+      <div *ngIf="!token">
+        <a routerLink="/account" class="btn-register">
+          <button type="button" class="btn-register btn btn-warning mr-3">Account</button>
+        </a>
+        <button type="button" class="btn-login btn btn-outline-warning">Log out</button>
+      </div>
+    </div>
+  </nav>
+</div>

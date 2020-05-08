@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm m-2">
+      <form class="form-inline my-auto my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Find a recipe..." aria-label="Search" />
+        <button class="btn btn-outline-dark my-2 my-sm-0 mr-sm-2" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <app-recipes [recipes]="recipes"></app-recipes>
+  </div>
+  <div class="row mt-4" style="font-size: 36px">
+    <i class="ml-auto fas fa-arrow-circle-left m-2 text-secondary" style="cursor: pointer"></i>
+
+    <i class="mr-auto fas fa-arrow-circle-right m-2 text-secondary" style="cursor: pointer"></i>
+  </div>
+</div>
